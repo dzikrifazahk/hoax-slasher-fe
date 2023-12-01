@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex fixed-top bg-blue-800 py-4 px-5 justify-between">
+    <nav className="flex fixed top-0 right-0 left-0 bg-blue-800 py-4 px-5 justify-between">
       <h1 className="text-white text-2xl">
         BERI<span className="text-blue-400">TAMA</span>
       </h1>
