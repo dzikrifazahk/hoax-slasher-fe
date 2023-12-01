@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Navbar from "./navbar";
+import LatestNewsCard from "@/components/fragments/latest_news";
+import NewsGrid from "@/components/layouts/new_grid";
 
 export default function Home() {
   return (
@@ -26,11 +28,8 @@ export default function Home() {
             </form>
           </div>
 
-          <div className="flex px-8 mt-20">
-            <h2 className="font-bold">Find your interested topic here</h2>
-          </div>
-          <div className="flex ml-10 mt-5">
-            <span>Foto</span>
+          <div className="mt-20">
+            <NewsGrid />
           </div>
         </div>
       </main>
