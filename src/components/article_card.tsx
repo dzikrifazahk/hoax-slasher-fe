@@ -25,7 +25,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
       <div className="md:flex">
         <div className="md:shrink-0">
           <img
-            className=" w-full h-full object-cover md:w-40"
+            className=" w-40 h-40 object-cover md:w-40"
             src={imageUrl}
             alt=""
           />

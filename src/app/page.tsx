@@ -3,6 +3,7 @@ import Navbar from "./navbar";
 import LatestNewsCard from "@/components/fragments/latest_news";
 import NewsGrid from "@/components/layouts/new_grid";
 import InterestedTopic from "@/components/fragments/interested_topic";
+import EventList from "@/components/fragments/event";
 
 export default function Home() {
   return (
@@ -36,7 +37,9 @@ export default function Home() {
             <div className="col-span-2">
               <InterestedTopic />
             </div>
-            <div></div>
+            <div>
+              <EventList />
+            </div>
           </div>
         </div>
       </main>

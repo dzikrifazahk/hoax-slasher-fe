@@ -18,6 +18,7 @@ const config: Config = {
       },
       fontSize: {
         sm: "11px",
+        md: "12px",
       },
     },
   },
