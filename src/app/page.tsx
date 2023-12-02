@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "./navbar";
 import LatestNewsCard from "@/components/fragments/latest_news";
 import NewsGrid from "@/components/layouts/new_grid";
+import InterestedTopic from "@/components/fragments/interested_topic";
 
 export default function Home() {
   return (
@@ -30,6 +31,12 @@ export default function Home() {
 
           <div className="mt-20">
             <NewsGrid />
+          </div>
+          <div className="grid grid-cols-3 gap-10 mt-10">
+            <div className="col-span-2">
+              <InterestedTopic />
+            </div>
+            <div></div>
           </div>
         </div>
       </main>

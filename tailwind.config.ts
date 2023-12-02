@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         primaryColor: "#00008F",
       },
+      fontSize: {
+        sm: "11px",
+      },
     },
   },
   plugins: [],

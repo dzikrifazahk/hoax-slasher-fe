@@ -40,15 +40,19 @@ const LatestNewsCarousel: React.FC = () => {
   };
 
   return (
-    <div className="bg-white rounded shadow-lg p-6 relative">
-      <div className="absolute top-0 left-0 p-5 text-2xl font-bold rounded-tr rounded-bl">
-        Latest News
+    <div className="bg-white rounded shadow-lg p-6 relavive">
+      <div className="grid grid-cols-2">
+        <span className="text-start text-lg font-bold rounded-tr rounded-bl">
+          Latest News
+        </span>
+        <span className="text-end text-md font-bold text-blue-800">
+          <Link href="">View All</Link>
+        </span>
       </div>
-      <div className="absolute top-0 right-0 text-blue-800 p-2 rounded-tl rounded-br">
-        <Link href="">View All</Link>
-      </div>
-      <Slider {...settings}>
-        {/* {newsData.map((news, index) => (
+
+      <div className="relative">
+        <Slider {...settings}>
+          {/* {newsData.map((news, index) => (
           <div key={index} className=" mt-10">
             <div className="grid grid-flow-col auto-cols-max">
               <div>
@@ -62,55 +66,56 @@ const LatestNewsCarousel: React.FC = () => {
             </div>
           </div>
         ))} */}
-        <div className="mt-10">
-          <div className="grid grid-flow-col auto-cols-max">
-            <div>
-              <NewsCard
-                imageUrl="news/Image-1.png"
-                title="KPK Duga Ada Pengurusan Terselubung dalam Dugaan Suap"
-                author="Dzikri Faza H"
-                timeAgo="5 Minutes Ago"
-              />
-            </div>
-            <div>
-              <NewsCard
-                imageUrl="news/Image-2.png"
-                title="TKN Gelar Rakornas di Jakarta Besok, Prabowo-Gibran Hadir"
-                author="Defa Nugraha"
-                timeAgo="5 Minutes Ago"
-              />
-            </div>
-            <div>
-              <NewsCard
-                imageUrl="news/Image-3.png"
-                title="Muhaimin Ungkap Syarat Jadi Cawapres Anies, jika Menang Harus Dilibatkan"
-                author="Rizal Setyo Nugroho"
-                timeAgo="5 Minutes Ago"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="mt-10">
-          <div className="grid grid-flow-col auto-cols-max">
-            <div>
-              <NewsCard
-                imageUrl="news/Image-4.png"
-                title="Mahfud Tak Masalah Tidak Ada Debat Khusus bagi Cawapres"
-                author="Defa Nugraha"
-                timeAgo="5 Minutes Ago"
-              />
-            </div>
-            <div>
-              <NewsCard
-                imageUrl="news/Image-5.png"
-                title="KPU Ungkap Alasan Debat Cawapres Didampingi Capres, Beda dari Pilpres 2019"
-                author="Defa Nugraha"
-                timeAgo="5 Minutes Ago"
-              />
+          <div className="mt-10">
+            <div className="grid grid-flow-col auto-cols-max">
+              <div>
+                <NewsCard
+                  imageUrl="news/Image-1.png"
+                  title="KPK Duga Ada Pengurusan Terselubung dalam Dugaan Suap"
+                  author="Dzikri Faza H"
+                  timeAgo="5 Minutes Ago"
+                />
+              </div>
+              <div>
+                <NewsCard
+                  imageUrl="news/Image-2.png"
+                  title="TKN Gelar Rakornas di Jakarta Besok, Prabowo-Gibran Hadir"
+                  author="Defa Nugraha"
+                  timeAgo="5 Minutes Ago"
+                />
+              </div>
+              <div>
+                <NewsCard
+                  imageUrl="news/Image-3.png"
+                  title="Muhaimin Ungkap Syarat Jadi Cawapres Anies, jika Menang Harus Dilibatkan"
+                  author="Rizal Setyo Nugroho"
+                  timeAgo="5 Minutes Ago"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </Slider>
+          <div className="mt-10">
+            <div className="grid grid-flow-col auto-cols-max">
+              <div>
+                <NewsCard
+                  imageUrl="news/Image-4.png"
+                  title="Mahfud Tak Masalah Tidak Ada Debat Khusus bagi Cawapres"
+                  author="Defa Nugraha"
+                  timeAgo="5 Minutes Ago"
+                />
+              </div>
+              <div>
+                <NewsCard
+                  imageUrl="news/Image-5.png"
+                  title="KPU Ungkap Alasan Debat Cawapres Didampingi Capres, Beda dari Pilpres 2019"
+                  author="Defa Nugraha"
+                  timeAgo="5 Minutes Ago"
+                />
+              </div>
+            </div>
+          </div>
+        </Slider>
+      </div>
     </div>
   );
 };

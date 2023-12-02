@@ -3,7 +3,7 @@ import NewsCard from "../card_news";
 export default function HighlightArticleCard() {
   return (
     <div className="bg-white rounded shadow-lg p-6 relavive">
-      <h1 className="font-bold text-xl">Highlight Article</h1>
+      <h1 className="font-bold text-lg">Highlight Article</h1>
       <div className="mt-10">
         <NewsCard
           imageUrl="news/Image-1.png"
