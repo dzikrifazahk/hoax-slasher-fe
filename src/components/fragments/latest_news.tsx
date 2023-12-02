@@ -68,7 +68,7 @@ const LatestNewsCarousel: React.FC = () => {
               <NewsCard
                 imageUrl="news/Image-1.png"
                 title="KPK Duga Ada Pengurusan Terselubung dalam Dugaan Suap"
-                author="Defa Nugraha"
+                author="Dzikri Faza H"
                 timeAgo="5 Minutes Ago"
               />
             </div>
@@ -84,7 +84,7 @@ const LatestNewsCarousel: React.FC = () => {
               <NewsCard
                 imageUrl="news/Image-3.png"
                 title="Muhaimin Ungkap Syarat Jadi Cawapres Anies, jika Menang Harus Dilibatkan"
-                author="Defa Nugraha"
+                author="Rizal Setyo Nugroho"
                 timeAgo="5 Minutes Ago"
               />
             </div>

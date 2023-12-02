@@ -1,3 +1,4 @@
+import HighlightArticleCard from "../fragments/highlight_acticle";
 import LatestNewsCard from "../fragments/latest_news";
 
 const NewsGrid = () => {
@@ -6,7 +7,9 @@ const NewsGrid = () => {
       <div className="col-span-2">
         <LatestNewsCard />
       </div>
-      <div>{/* <HighlightArticleCard /> */}</div>
+      <div>
+        <HighlightArticleCard />
+      </div>
     </div>
   );
 };
